@@ -1,0 +1,75 @@
+#sectionprincipal{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.sectioncontainer{
+    margin-top: 70px;
+
+}
+.p3{
+    margin-top: 30px;
+}
+
+.compra-entradas {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.compra-entradas h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Botón de comprar */
+.boton-comprar {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+  background-color: #0056b3;
+}
+
+/* Ocultar el checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Menú desplegable */
+.menu-opciones {
+  margin-top: 20px;
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-opciones li {
+  margin: 10px 0;
+}
+
+.menu-opciones a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.menu-opciones a:hover {
+  color: #0056b3;
+}
+
+/* Mostrar el menú cuando el checkbox está activado */
+#toggle-menu:checked ~ .menu-opciones {
+  display: block;
+}

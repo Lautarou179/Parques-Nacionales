@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #a1a0a0;
+  font-family: sans-serif;
+}
+h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10vh;
+}
+#grua{
+width: 100%;
+/* background-color: blueviolet; */
+animation: move 8s infinite alternate-reverse;
+position: relative;
+/* animation-iteration-count: ; */
+}
+
+#boton{
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  width: 30%;
+  padding: 20px;
+  background-color: steelblue;
+  border-radius: 10px;
+  border: solid 2px black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: larger;
+  cursor: pointer;
+  animation: balanceo 5s ease-in-out infinite;
+
+}
+/* MOVIMIENTO DE LA GRUA */
+@keyframes move{
+ 0%    { transform: translateX(-100%); }
+ 100%    { transform: translateX(110%); }
+}
+/* MOVIMIENTO DEL BOTON  */
+@keyframes balanceo {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(5deg); }
+  50%  { transform: rotate(0deg); }
+  75%  { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
